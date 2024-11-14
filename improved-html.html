@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Historia de los métodos anticonceptivos a través del tiempo">
+    <title>La Historia de los Anticonceptivos</title>
+    <link rel="stylesheet" href="updated-color-theme-gray.css">
+    <script src="updated-script.js" defer></script>
+</head>
+<body>
+    <!-- Pantalla de Bienvenida Dinámica -->
+    <div id="welcome-screen" class="welcome-screen" role="dialog" aria-labelledby="welcome-title">
+        <div class="welcome-content">
+            <h1 id="welcome-title">Bienvenido a la Historia de los Anticonceptivos</h1>
+            <p>Explora cómo han evolucionado los métodos anticonceptivos a lo largo de los siglos</p>
+            <button id="enter-button" aria-label="Comenzar la exploración">Comenzar el Viaje</button>
+        </div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <div id="main-content" class="main-content" style="display:none;">
+        <header role="banner">
+            <nav role="navigation" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#introduccion" aria-current="page">Introducción</a></li>
+                    <li><a href="#epoca-antigua">Época Antigua</a></li>
+                    <li><a href="#edad-media">Edad Media</a></li>
+                    <li><a href="#epoca-moderna">Época Moderna</a></li>
+                    <li><a href="#epoca-contemporanea">Época Contemporánea</a></li>
+                    <li><a href="#avances-tecnologicos">Avances Tecnológicos</a></li>
+                    <li><a href="#quiz">Cuestionario</a></li>
+                    <li><a href="#conclusion">Conclusión</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main role="main">
+            <article id="introduccion">
+                <h1>Introducción</h1>
+                <p>Desde la antigüedad hasta la era moderna, los métodos anticonceptivos han reflejado avances científicos y cambios sociales.</p>
+            </article>
+
+            <article id="epoca-antigua">
+                <h1>Época Antigua</h1>
+                <p>En civilizaciones como Egipto, Grecia y Roma se usaban técnicas rudimentarias para prevenir embarazos.</p>
+                <aside class="additional-info">
+                    <h3>¿Sabías que?</h3>
+                    <p>Los egipcios utilizaban miel y hojas de acacia como métodos anticonceptivos naturales.</p>
+                </aside>
+            </article>
+
+            <!-- Secciones similares para otras épocas... -->
+
+            <section id="quiz" role="form" aria-labelledby="quiz-title">
+                <h1 id="quiz-title">Prueba tu Conocimiento</h1>
+                <form id="quiz-form">
+                    <fieldset>
+                        <legend>Preguntas sobre Historia de Anticonceptivos</legend>
+                        
+                        <div class="question-group">
+                            <fieldset>
+                                <legend>Pregunta 1</legend>
+                                <label for="question1">¿En qué época comenzaron a usarse métodos anticonceptivos rudimentarios?</label>
+                                <input type="text" id="question1" name="question1" required 
+                                       aria-describedby="help-question1">
+                                <div id="help-question1" class="help-text">Menciona la civilización y período aproximado</div>
+                            </fieldset>
+                        </div>
+
+                        <!-- Más preguntas con estructura similar -->
+
+                        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                            <div class="progress"></div>
+                        </div>
+
+                        <button type="submit" aria-label="Enviar respuestas del cuestionario">Enviar Respuestas</button>
+                    </fieldset>
+                </form>
+                <div id="quiz-result" role="alert" aria-live="polite"></div>
+            </section>
+        </main>
+
+        <aside id="resources" role="complementary">
+            <h2>Recursos Adicionales</h2>
+            <ul>
+                <li><a href="#" aria-label="Descargar PDF sobre historia antigua">Historia Antigua (PDF)</a></li>
+                <li><a href="#" aria-label="Ver línea de tiempo interactiva">Línea de Tiempo</a></li>
+            </ul>
+        </aside>
+
+        <footer role="contentinfo">
+            <p>© 2024 Historia de los Anticonceptivos</p>
+        </footer>
+    </div>
+
+    <!-- Botón de regreso arriba -->
+    <button id="back-to-top" class="boton-arriba" aria-label="Volver arriba" 
+            style="display: none;">↑</button>
+</body>
+</html>

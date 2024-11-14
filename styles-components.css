@@ -1,0 +1,69 @@
+/* Base y Variables */
+@import './components/variables.css';
+@import './components/reset.css';
+@import './components/typography.css';
+@import './components/grid.css';
+@import './components/animations.css';
+
+/* Componentes */
+@import './components/header.css';
+@import './components/navigation.css';
+@import './components/welcome.css';
+@import './components/quiz.css';
+@import './components/progress.css';
+@import './components/forms.css';
+@import './components/buttons.css';
+@import './components/footer.css';
+@import './components/accessibility.css';
+
+/* Variables CSS */
+:root {
+    /* Nueva paleta de colores vibrantes */
+    --color-primary: #FF6B6B;
+    --color-secondary: #4ECDC4;
+    --color-accent: #FFE66D;
+    --color-background: #f7f7f7;
+    --color-text: #2C3E50;
+    --color-white: #ffffff;
+    --color-success: #2ECC71;
+    --color-warning: #F1C40F;
+    --color-error: #E74C3C;
+    
+    /* Gradientes */
+    --gradient-primary: linear-gradient(45deg, var(--color-primary), #FF8E8E);
+    --gradient-secondary: linear-gradient(45deg, var(--color-secondary), #6BE4D9);
+    
+    /* Espaciado */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    
+    /* Bordes */
+    --border-radius-sm: 5px;
+    --border-radius-md: 10px;
+    --border-radius-lg: 20px;
+    --border-width: 2px;
+    
+    /* Sombras */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.3);
+    
+    /* Transiciones */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+/* Modo Oscuro */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: #1a1a1a;
+        --color-text: #ffffff;
+        --color-primary: #FF8E8E;
+        --color-secondary: #6BE4D9;
+        --color-accent: #FFE66D;
+    }
+}

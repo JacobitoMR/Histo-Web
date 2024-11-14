@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Historia de los métodos anticonceptivos a través del tiempo">
+    <title>La Historia de los Anticonceptivos</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script type="module" src="./js/app.js"></script>
+</head>
+<body>
+    <!-- Pantalla de Bienvenida -->
+    <div id="welcome-screen" class="welcome-screen" role="dialog" aria-labelledby="welcome-title">
+        <div class="welcome-content">
+            <h1 id="welcome-title" class="title-gradient">Bienvenido a la Historia de los Anticonceptivos</h1>
+            <p class="subtitle">Explora cómo han evolucionado los métodos anticonceptivos a lo largo de los siglos</p>
+            <button id="enter-button" class="button button-primary" aria-label="Comenzar la exploración">
+                Comenzar el Viaje
+            </button>
+        </div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <div id="main-content" class="main-content" style="display:none;">
+        <header class="header" role="banner">
+            <nav class="nav-menu" role="navigation" aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li><a href="#introduccion" class="nav-item" aria-current="page">Introducción</a></li>
+                    <li><a href="#epoca-antigua" class="nav-item">Época Antigua</a></li>
+                    <li><a href="#edad-media" class="nav-item">Edad Media</a></li>
+                    <li><a href="#epoca-moderna" class="nav-item">Época Moderna</a></li>
+                    <li><a href="#epoca-contemporanea" class="nav-item">Época Contemporánea</a></li>
+                    <li><a href="#avances-tecnologicos" class="nav-item">Avances Tecnológicos</a></li>
+                    <li><a href="#quiz" class="nav-item">Cuestionario</a></li>
+                    <li><a href="#conclusion" class="nav-item">Conclusión</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-container" role="main">
+            <article id="introduccion" class="section-card">
+                <div class="section-header">
+                    <h1 class="title-gradient">Introducción</h1>
+                </div>
+                <div class="section-content">
+                    <p class="text-content">Desde la antigüedad hasta la era moderna, los métodos anticonceptivos han reflejado avances científicos y cambios sociales.</p>
+                </div>
+            </article>
+
+            <article id="epoca-antigua" class="section-card">
+                <div class="section-header">
+                    <h1 class="title-gradient">Época Antigua</h1>
+                </div>
+                <div class="section-content">
+                    <p class="text-content">En civilizaciones como Egipto, Grecia y Roma se usaban técnicas rudimentarias para prevenir embarazos.</p>
+                    <aside class="info-card">
+                        <h3 class="info-title">¿Sabías que?</h3>
+                        <p class="info-content">Los egipcios utilizaban miel y hojas de acacia como métodos anticonceptivos naturales.</p>
+                    </aside>
+                </div>
+            </article>
+
+            <section id="quiz" class="quiz-container" role="form" aria-labelledby="quiz-title">
+                <div class="section-header">
+                    <h1 id="quiz-title" class="title-gradient">Prueba tu Conocimiento</h1>
+                </div>
+                <form id="quiz-form" class="quiz-form">
+                    <fieldset class="quiz-fieldset">
+                        <legend class="quiz-legend">Preguntas sobre Historia de Anticonceptivos</legend>
+                        
+                        <div class="question-group">
+                            <fieldset class="question-fieldset">
+                                <legend class="question-title">Pregunta 1</legend>
+                                <div class="form-control">
+                                    <label for="question1" class="question-label">¿En qué época comenzaron a usarse métodos anticonceptivos rudimentarios?</label>
+                                    <input type="text" id="question1" name="question1" class="input-field" required 
+                                           aria-describedby="help-question1">
+                                    <div id="help-question1" class="help-text">Menciona la civilización y período aproximado</div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="progress-container" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                            <div class="progress-bar"></div>
+                        </div>
+
+                        <button type="submit" class="button button-primary" aria-label="Enviar respuestas del cuestionario">
+                            Enviar Respuestas
+                        </button>
+                    </fieldset>
+                </form>
+                <div id="quiz-result" class="quiz-result" role="alert" aria-live="polite"></div>
+            </section>
+
+            <aside id="resources" class="resources-section" role="complementary">
+                <div class="section-header">
+                    <h2 class="title-gradient">Recursos Adicionales</h2>
+                </div>
+                <div class="resources-grid">
+                    <a href="#" class="resource-card" aria-label="Descargar PDF sobre historia antigua">
+                        <div class="resource-icon">📄</div>
+                        <span class="resource-title">Historia Antigua (PDF)</span>
+                    </a>
+                    <a href="#" class="resource-card" aria-label="Ver línea de tiempo interactiva">
+                        <div class="resource-icon">📅</div>
+                        <span class="resource-title">Línea de Tiempo</span>
+                    </a>
+                </div>
+            </aside>
+        </main>
+
+        <footer class="footer" role="contentinfo">
+            <div class="footer-content">
+                <p class="footer-text">© 2024 Historia de los Anticonceptivos</p>
+                <nav class="footer-nav">
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Términos</a></li>
+                        <li><a href="#" class="footer-link">Privacidad</a></li>
+                        <li><a href="#" class="footer-link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Botón de regreso arriba -->
+    <button id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <span class="arrow-up">↑</span>
+    </button>
+</body>
+</html>
